@@ -9,4 +9,5 @@ if (requireNamespace("rlang", quietly = TRUE)) {
    rlang_backtrace_on_error = "full",
    error = rlang::entrace
  )
+ globalCallingHandlers(error = rlang::entrace)
 }
