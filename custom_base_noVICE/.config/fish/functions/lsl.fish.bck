@@ -1,0 +1,5 @@
+function lsl --argument path
+	set -q path[1]
+	or set path '.'
+	exa --all --header --long --git --sort=mod $path
+end
